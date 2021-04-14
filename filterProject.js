@@ -1,26 +1,24 @@
 const btn = document.querySelectorAll('.a');
-const img = document.querySelectorAll('img');
 const items = document.querySelectorAll('.food');
-const span = document.querySelectorAll('span');
-
-
 
 btn.forEach(button => {
-    button.addEventListener('click', (e)=>{
+    button.addEventListener('click', (e) => {
         e.preventDefault();
-        let filter = e.target.dataset.item;
-        console.log(filter);
-
-      items.forEach(item => {
-          if(filter === 'all') {
-             item.style.display = 'block';
-          }else{
-              if(item.classList.contains(filter)) {
-                  item.style.display = 'block';
+      let filter = e.target.dataset.btn;
+       
+        items.forEach(product => {
+            if(button.classList.contains('all')) {
+               product.style.display = 'block';
+            }else {
+              if(product.classList.contains(filter)){
+                product.style.display = 'block';
               }else {
-                  item.style.display = 'none';
+                  product.style.display = 'none';
               }
-          }
-      })
+            }
+        })
     })
 })
+
+
+
