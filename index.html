@@ -13,17 +13,40 @@
             <h1>Our<span>Store</span></h1>
         </div>
         <nav>
-            <a href="#">All</a>
-            <a href="#">Cakes</a>
-            <a href="#">Cupcakes</a>
-            <a href="#">Sweets</a>
-            <a href="#">Doughnuts</a>
+            <button class="a all">All</button>
+            <button class="a cakes">Cakes</button>
+            <button class="a cupcakes">Cupcakes</button>
+            <button class="a sweet">Sweets</button>
+            <button class="a doughnuts ">Doughnuts</button>
         </nav>
-        <button class="search">☪︎</button>
-        <input type="text" placeholder="item...">
+        <div class="boxSearch">
+          <button class="search">☪︎</button>
+          <input type="text" placeholder="item...">
+        </div>
         <div class="grid">
-            <div class="food">
+            <div class="food cake" data-item="cake">
                 <img src="back.jpg" alt="">
+               <div class="description"> 
+                 <h3 class="item">Sweet item <span>$5</span></h3>
+               </div>
+            </div>
+            <div class="food cupcake" data-item="cupcake">
+                <img src="back.jpg" alt="">
+                <div class="description">
+                    <h3 class="item">Sweet item <span>$5</span></h3>
+                </div>
+            </div>
+            <div class="food sweets" data-item="sweets">
+                <img src="back.jpg" alt="">
+                <div class="description">
+                    <h3 class="item">Sweet item <span>$5</span></h3>
+                </div>
+            </div>
+            <div class="food doughnuts" data-item="doughnuts">
+                <img src="back.jpg" alt="">
+                <div class="description">
+                    <h3 class="item">Sweet item <span>$5</span></h3>
+                </div>
             </div>
         </div>
     </div>  
