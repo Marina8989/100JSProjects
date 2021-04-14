@@ -33,3 +33,28 @@
     color: white;
     cursor: pointer;
 }
+.text{
+    margin-top: 2rem;
+}
+.text h2,
+.text h1{
+    margin-bottom: 1rem;
+}
+.testimonial{
+    border: 1px solid green;
+    margin: 1rem 3rem;
+    position: relative;
+    padding: 1rem;
+}
+.round{
+    position: absolute;
+    top: -15px;
+    left: 18rem;
+    border: 1px solid pink;
+    width: 120px;
+    height: 32px;
+    background: pink;
+}
+.comment{
+    margin-top: 1.8rem;
+}
