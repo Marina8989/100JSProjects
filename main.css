@@ -4,15 +4,37 @@
     box-sizing: border-box;
 }
 .container{
-    border: 1px solid blue;
-    width: 800px;
-    height: 450px;
+    border: 1px solid grey;
+    width: 1200px;
+    height: 750px;
     text-align: center;
     margin:2rem auto;
     position: relative;
 }
-
-
+.store{
+    margin: 2.2rem 0;
+}
+span{
+    color: rgb(252, 117, 139);
+}
+nav{
+    margin-bottom: 2.8rem;
+}
+nav a {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px 7px;
+    color: rgb(70, 67, 67);
+}
+.search{
+    padding: 3px;
+    background:rgb(252, 117, 139);
+    border: none;
+}
+/* 
 .left{
     position: absolute;
     top: 10rem;
@@ -57,4 +79,4 @@
 }
 .comment{
     margin-top: 1.8rem;
-}
+} */
