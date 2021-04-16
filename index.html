@@ -4,42 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>TodoList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="container">
-      <div class="tipCalc">
-          <h2>TIP CALCULATOR</h2>
-
-          <div id="total">
-            <label for="totals">How Much Was Your Bill?</label><br />
-            <span>$</span><input type="number" id="totals">
-         </div>
-
-         <div id="share">
-            <label for="shares">How Many People Sharing The Bill?</label><br />
-            <span>☺︎</span><input type="number" id="shares">
-        </div>
-        <div id="score">
-            <label for="scores">How Was Your Service?</label><br />
-            <select id="scores">
-                <option value="choose">Choose</option>
-                <option value="20">Great - 20%</option>
-                <option value="10">Good - 10%</option>
-                <option value="2">Bad - 2%</option>
-            </select>
-        </div>
-            <button class="calculate">Calculate</button>
-        </form>
-
-        <div class="totalPayment">
-            <h3 class="x"></h3>
-        </div>
-      </div>
-  </div>
-
+   <header>Marina's Todo List</header>   
+   <form>
+       <input type="text">
+       <button type="submit" class="btn"><i class="fas fa-plus"></i></button>
+   </form>
         
-    <script src="tipForm.js"></script>
+   <div class="todo-container">
+       <ul class="todo-list"></ul>
+   </div>
+
+    <script src="todoList.js"></script>
 </body>
 </html>
