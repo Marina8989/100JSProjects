@@ -6,56 +6,15 @@ const btn = document.querySelector('.calculate');
 const x = document.querySelector('.x');
 
 
-   if(scores[1].value == 'great') {
-       btn.addEventListener('click', () => {
-          let s = ((+totals.value * 20) / 100) / (+shares.value);
-            x.innerText = `Each of you have to pay: $${s}`;
-            totalPayment.append(x);
-       })
-  }
+btn.addEventListener('click', calc);
 
- if(scores[2].value == 'good') {
-     btn.addEventListener('click', () => {
-        let n = ((+totals.value * 10) / 100) / (+shares.value);
-        x.innerText = `Each of you have to pay: $${n}`;
-        totalPayment.append(x);
-     })
-  }
+function calc() {
+    let t = Number(totals.value); //100
+    let sh = Number(shares.value); // 2
+    let sc = Number(scores.value)/100; // 20 /100 = 0.2
 
+    let num = (t * sc) / sh;
 
-
-
-// btn.addEventListener('click', () => {
-//   if(scores[1].value == 'great') {
-//      let s = ((+totals.value * 20) / 100) / (+shares.value);
-//         x.innerText = `Each of you have to pay: $${s}`;
-//         totalPayment.append(x);
-//   }
-//   if(scores[2].value == 'good') {
-//      let n = ((+totals.value * 10) / 100) / (+shares.value);
-//         x.innerText = `Each of you have to pay: $${n}`;
-//         totalPayment.append(x);
-//   }
-
-// })
-
-
-
-
-// let s = ((+totals.value * 20) / 100) / (+shares.value);
-//                   x.innerText = `Each of you have to pay: $${s}`;
-//                   totalPayment.append(x);
-//                   break;
-
-
-
-// let n = ((+totals.value * 10) / 100) / (+shares.value);
-//                  x.innerText = `Each of you have to pay: $${n}`;
-//                  totalPayment.append(x);
-//                  break;
-
-
-// let y = ((+totals.value * 2) / 100) / (+shares.value);
-//                  x.innerText = `Each of you have to pay: $${y}`;
-//                  totalPayment.append(x);
-//                  break; 
+    x.innerText = `You should tip: $${num}`;
+    
+}
