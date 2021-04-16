@@ -14,31 +14,42 @@
     cursor: pointer;
 }
 
-.calc {
+.tipCalc{
+    width: 400px;
+    height: 400px;
     border: 1px solid green;
-    width: 86px;
-    height: 154px;
-    text-align: center;
-    margin:  5rem auto;
-}
-.keyboard {
-    display: grid;
-   grid-template-columns: 20px 20px 20px 20px;;
+    margin: 5rem auto;
+    
 }
 
-.result{
-    display: grid;
-    grid-template-columns: 20px 0px 0px 0px;
-    background: rgba(0,0,0,.4);
+h2{
+    border-bottom: 1px solid white;
+    padding: 1.3rem 0;
+    background: rgb(75, 75, 182);
     color: white;
-    margin-bottom: .2rem;
-    height: 2.4rem;
-    display: block;
 }
-.key{
-    padding: 5px 10px;
-   font-size: 10px;
+
+
+#total,
+#share,
+#score{
+    margin: 1rem 0 2rem 0;
 }
+
+span{
+    background:rgb(75, 75, 182);
+    padding: 2.5px 5px;
+    color: white;
+}
+input{
+    padding: 4px 5px;
+}
+
+.totalPayment{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
 
 
 /* .store{
