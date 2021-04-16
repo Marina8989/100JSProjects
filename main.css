@@ -33,6 +33,7 @@
     color: white;
     margin-bottom: .2rem;
     height: 2.4rem;
+    display: block;
 }
 .key{
     padding: 5px 10px;
