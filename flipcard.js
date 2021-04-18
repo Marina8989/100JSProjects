@@ -23,7 +23,7 @@ function addModal() {
      const h4 = document.createElement('h4');
      const showBtn = document.createElement('button');
      const hideBtn = document.createElement('button');
-     
+
 
     if(question.value == '' || answer.value == '') {
         const h2 = document.createElement('h2');
@@ -49,6 +49,17 @@ function addModal() {
    question.value = '';
    answer.value = '';
    qamodal.append(modalDiv);
+  } 
 
-    } 
+
+  showBtn.addEventListener('click', showAnswer);
+  hideBtn.addEventListener('click', hideAnswer);
+
+  function showAnswer() {
+      h4.style.display = 'block';
+  }
+
+  function hideAnswer() {
+      h4.style.display = 'none';
+  }
 }
