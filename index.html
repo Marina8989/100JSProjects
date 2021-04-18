@@ -11,16 +11,31 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   <header>Marina's Todo List</header>   
-   <form>
-       <input type="text" class="todo-input">
-       <button type="submit" class="btn"><i class="fas fa-plus"></i></button>
-   </form>
-        
-   <div class="todo-container">
-       <ul class="todo-list"></ul>
-   </div>
+    <div class="container">
+        <h2>Flashcards</h2>
+        <button class="add">Add Question</button>
 
-    <script src="todoList.js"></script>
+     <div class="modal">
+         <button class="closeBtn"><i class="fas fa-hamburger"></i></button>
+         <div class="question">
+           <label for="question">Question</label><br/>
+           <textarea name="question" id="question" cols="50" rows="5"></textarea>
+         </div>
+
+        <div class="answer">
+          <label for="answer">Answer</label><br/>
+          <textarea name="answer" id="answer" cols="50" rows="5"></textarea>
+        </div>
+
+         <button class="save">save</button>
+     </div>
+
+     <div class="qamodal">
+
+     </div>
+
+    </div>
+
+    <script src="flipcard.js"></script>
 </body>
 </html>
