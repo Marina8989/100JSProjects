@@ -18,6 +18,12 @@ closeBtn.addEventListener('click', () => {
 saveBtn.addEventListener('click', addModal);
 
 function addModal() {
+     const modalDiv = document.createElement('div');
+     const h3 = document.createElement('h3');
+     const h4 = document.createElement('h4');
+     const showBtn = document.createElement('button');
+     const hideBtn = document.createElement('button');
+     
 
     if(question.value == '' || answer.value == '') {
         const h2 = document.createElement('h2');
@@ -27,18 +33,17 @@ function addModal() {
             h2.style.display = 'none';
         }, 2000);
     }else{
-    const modalDiv = document.createElement('div');
-
-    const h3 = document.createElement('h3');
     h3.innerText = question.value;
 
-    const showBtn = document.createElement('button');
+    h4.innerText = answer.value;
+    h4.style.display = 'none';
+
     showBtn.innerText = 'show';
 
-    const hideBtn = document.createElement('button');
     hideBtn.innerText = 'hide answer';
   
    modalDiv.append(h3);
+   modalDiv.append(h4);
    modalDiv.append(showBtn);
    modalDiv.append(hideBtn);
    question.value = '';
