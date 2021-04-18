@@ -19,6 +19,14 @@ saveBtn.addEventListener('click', addModal);
 
 function addModal() {
 
+    if(question.value == '' || answer.value == '') {
+        const h2 = document.createElement('h2');
+        h2.innerText = 'Can not add empty value';
+        modal.prepend(h2);
+        setTimeout(() => {
+            h2.style.display = 'none';
+        }, 2000);
+    }else{
     const modalDiv = document.createElement('div');
 
     const h3 = document.createElement('h3');
@@ -34,5 +42,8 @@ function addModal() {
    modalDiv.append(showBtn);
    modalDiv.append(hideBtn);
    question.value = '';
+   answer.value = '';
    qamodal.append(modalDiv);
+
+    } 
 }
