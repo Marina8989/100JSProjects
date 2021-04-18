@@ -18,11 +18,21 @@ closeBtn.addEventListener('click', () => {
 saveBtn.addEventListener('click', addModal);
 
 function addModal() {
+
     const modalDiv = document.createElement('div');
+
     const h3 = document.createElement('h3');
     h3.innerText = question.value;
 
+    const showBtn = document.createElement('button');
+    showBtn.innerText = 'show';
+
+    const hideBtn = document.createElement('button');
+    hideBtn.innerText = 'hide answer';
+  
    modalDiv.append(h3);
+   modalDiv.append(showBtn);
+   modalDiv.append(hideBtn);
    question.value = '';
    qamodal.append(modalDiv);
 }
