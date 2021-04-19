@@ -5,21 +5,16 @@
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    margin: 1rem;
-}
-.add{
-    margin: 2em 0;
-} 
-
-.modal{
-    padding: 4rem;
-    border: 1px solid grey;
+    border: 1px solid green;
     width: 45%;
-    position: relative;
-    display: none;
+    margin: 5rem auto;
+    text-align: center;
 }
-.fa-hamburger{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+input{
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+.btn{
+    padding: 3px 7px;
+    margin: 5px 10px;
 }
