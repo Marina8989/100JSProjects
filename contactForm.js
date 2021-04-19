@@ -1,3 +1,4 @@
+
 const sendBtn = document.querySelector('.sendBtn');
 const resetBtn = document.querySelector('.resetBtn');
 const getBtn = document.querySelector('.getBtn');
@@ -6,6 +7,8 @@ const userEmail = document.querySelector('#userEmail');
 const userMessage = document.querySelector('#userMessage');
 
 let getName = localStorage.getItem('name');
+let getEmail = localStorage.getItem('email');
+let getMessage = localStorage.getItem('message');
 
 sendBtn.addEventListener('click', sendContact);
 resetBtn.addEventListener('click', resetContact)
@@ -15,6 +18,8 @@ function resetContact() {
     userName.value = '';
     userEmail.value = '';
     userMessage.value = '';
+
+    localStorage.clear();
 }
 
 
@@ -42,10 +47,16 @@ function sendContact() {
 function getContact() {
     const newDiv = document.createElement('div');
     const newH4 = document.createElement('h4');
+    const newH3 = document.createElement('h3');
+    const pNew = document.createElement('p');
+
     newH4.innerText = getName;
-    
+    newH3.innerText = getEmail;
+    pNew.innerText = getMessage
 
     
     newDiv.append(newH4);
+    newDiv.append(newH3);
+    newDiv.append(pNew);
     document.body.append(newDiv);
 }
